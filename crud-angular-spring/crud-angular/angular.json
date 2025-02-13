@@ -8,6 +8,10 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "_comment": "**Adicionado manualmente para acompanhar o curso!**",
+          "strict": true
         }
       },
       "root": "",
