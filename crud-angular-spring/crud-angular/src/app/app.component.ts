@@ -5,11 +5,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  imports: [RouterOutlet, MatToolbarModule, MatButtonModule, MatIconModule],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [RouterOutlet, MatToolbarModule, MatButtonModule, MatIconModule]
 })
 export class AppComponent {
   title = 'crud-angular';
