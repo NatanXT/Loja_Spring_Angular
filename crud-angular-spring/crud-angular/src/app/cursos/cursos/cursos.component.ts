@@ -12,7 +12,7 @@ export class CursosComponent implements OnInit {
   cursos: Cursos[] = [];
 
     constructor(){
-      //this.cursos = [];
+      // this.cursos = [];
     }
     ngOnInit(): void {
 
