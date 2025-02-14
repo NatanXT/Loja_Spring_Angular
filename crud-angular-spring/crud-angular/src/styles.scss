@@ -1,4 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+
+@include mat.core();
+
+// Definição das paletas de cores
+$custom-app-primary: mat.define-palette(mat.$purple-palette, 50);
+$custom-app-secondary: mat.define-palette(mat.$deep-purple-palette, A200, A400, 700);
+$custom-app-warn: mat.define-palette(mat.$red-palette, A700);
+//#$custom-app-primary: mat-palette($mat-Purple 50);
+//#$custom-app-secondary: mat-palette($mat-DeepPurple A200, A400, 700);
+//#$custom-app-warn: mat-palette($mat-red A700);
+
+
+// Definição do tema
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-app-primary,
+    accent: $custom-app-secondary,
+    warn: $custom-app-warn,
+  )
+));
+//$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $custom-app-warn);
+
+
+// Aplica o tema em todos os componentes
+@include mat.all-component-themes($custom-theme);
+//@include angular-material-theme($custom-theme);
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
